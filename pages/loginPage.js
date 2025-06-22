@@ -9,49 +9,40 @@ exports.loginPage = class loginPage {
         this.loginErrorMessageElement = page.locator('.error-message-container');
     }
 
-    async navigateToSauceDemoHomePage()
-    {
-         await this.page.goto('https://www.saucedemo.com/');
+    async navigateToSauceDemoHomePage() {
+        await this.page.goto('https://www.saucedemo.com/');
     }
 
-    async enterUserName(username)
-    {
+    async enterUserName(username) {
         await this.usernameTextBoxElement.fill(username);
     }
 
-    async enterPassword(password)
-    {
+    async enterPassword(password) {
         await this.passwordTextBoxElement.fill(password);
     }
 
-    async login()
-    {
-         await this.loginButtonElement.click();
+    async login() {
+        await this.loginButtonElement.click();
     }
 
-    async isSideBarVisible()
-    {
+    async isSideBarVisible() {
         return await this.sideMenuElement.isVisible();
     }
 
-    async isErrorMessageVisible()
-    {
+    async isErrorMessageVisible() {
         return await this.loginErrorMessageElement.isVisible();
     }
 
-    async openSideMenu()
-    {
-        await this.sideMenuElement.waitFor({state:'visible'})
+    async openSideMenu() {
+        await this.sideMenuElement.waitFor({ state: 'visible' })
         await this.sideMenuElement.click();
     }
 
-    async logout()
-    {
+    async logout() {
         await this.logoutButtonElement.click();
     }
 
-    async isLoginButtonVisible()
-    {
+    async isLoginButtonVisible() {
         return await this.loginButtonElement.isVisible();
     }
 }

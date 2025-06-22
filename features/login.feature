@@ -21,9 +21,9 @@ Feature: LogIn
       | CV        | Patel    |
 
   Scenario: TC123458 Verify Successful Log-Out
-   When user enters "standard_user" and "secret_sauce"
-   And user login
-   Then user is logged-in successfully
-   When user opens side-menu
-   And user logout
-   Then user is logged-out
+    When user enters "standard_user" and "secret_sauce"
+    And user login
+    Then user is logged-in successfully
+    When user opens side-menu
+    And user logout
+    Then user is logged-out

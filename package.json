@@ -16,5 +16,5 @@
     "test": "npx bddgen && npx playwright test",
     "report": "npx playwright show-report"
   },
-  "module" : "commonjs"
+  "module": "commonjs"
 }

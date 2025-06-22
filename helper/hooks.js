@@ -1,10 +1,10 @@
-import {Before, After} from 'playwright-bdd';
+import { Before, After } from 'playwright-bdd';
 
-Before(async ({page}) => {
+Before(async ({ page }) => {
 
 });
 
-After(async ({page}) => {
-    
+After(async ({ page }) => {
+
     page.close();
 });
