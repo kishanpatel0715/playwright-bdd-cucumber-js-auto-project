@@ -20,7 +20,6 @@ Feature: LogIn
       | Kishan    | Patel    |
       | CV        | Patel    |
 
-  @only
   Scenario: TC123458 Verify Successful Log-Out
    When user enters "standard_user" and "secret_sauce"
    And user login

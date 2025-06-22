@@ -31,12 +31,12 @@ exports.loginPage = class loginPage {
 
     async isSideBarVisible()
     {
-        return await this.sideMenuElement.isVisible({ timeout: 2000 });
+        return await this.sideMenuElement.isVisible();
     }
 
     async isErrorMessageVisible()
     {
-        return await this.loginErrorMessageElement.isVisible({ timeout: 2000 });
+        return await this.loginErrorMessageElement.isVisible();
     }
 
     async openSideMenu()
@@ -52,6 +52,6 @@ exports.loginPage = class loginPage {
 
     async isLoginButtonVisible()
     {
-        return await this.loginButtonElement.isVisible({timeout: 2000});
+        return await this.loginButtonElement.isVisible();
     }
 }
