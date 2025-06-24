@@ -6,7 +6,7 @@ const { Given, Then } = createBdd();
 
 Given('the user navigates to DemoQA home page', async ({ page }) => {
     const _dynamicPropertiesPage = getDynamicPropertiesPage(page);
-    _dynamicPropertiesPage.navigateToDemoQaHomePage();
+    await _dynamicPropertiesPage.navigateToDemoQaHomePage();
 });
 
 Given('user selects the Elements from menu', async ({ page }) => {
