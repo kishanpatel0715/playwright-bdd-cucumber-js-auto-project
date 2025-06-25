@@ -5,20 +5,17 @@ import { getLoginPageObject } from '../helper/objectHelper';
 const { Given, When, Then } = createBdd();
 
 Given('User is on the login page', async ({ page }) => {
-
     const _loginPage = getLoginPageObject(page);
     await _loginPage.navigateToSauceDemoHomePage();
 });
 
 When('user enters {string} and {string}', async ({ page }, username, password) => {
-
     const _loginPage = getLoginPageObject(page);
     await _loginPage.enterUserName(username);
     await _loginPage.enterPassword(password);
 });
 
 When('user login', async ({ page }) => {
-
     const _loginPage = getLoginPageObject(page);
     await _loginPage.login();
 });

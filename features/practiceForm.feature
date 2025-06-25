@@ -6,7 +6,6 @@ Feature: PracticeForm
 		Given the user navigates to DemoQA home page
 		And the user selects the Forms from menu
 
-	@only
 	Scenario: TC123459 Verify successful Practice Form submission
 		When the user selects Practice Form from the sub-menu
 		And the user enters following details:
