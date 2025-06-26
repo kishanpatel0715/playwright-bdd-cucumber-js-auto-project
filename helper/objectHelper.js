@@ -1,7 +1,8 @@
 import { loginPage } from '../pages/loginPage';
-import { dynamicPropertiesPage } from '../pages/dynamicPropertiesPage'
-import { practiceFormPage } from '../pages/practiceFormPage'
-import { windowTabPage } from '../pages/windowTabPage'
+import { dynamicPropertiesPage } from '../pages/dynamicPropertiesPage';
+import { practiceFormPage } from '../pages/practiceFormPage';
+import { windowTabPage } from '../pages/windowTabPage';
+import { downloadUploadPage } from '../pages/downloadUploadPage';
 
 export function getLoginPageObject(page) {
     return new loginPage(page);
@@ -18,4 +19,9 @@ export function getPracticeFormPage(page) {
 export function getWindowTabPage(page)
 {
     return new windowTabPage(page);
+}
+
+export function getdownloadUploadPage(page)
+{
+    return new downloadUploadPage(page);
 }

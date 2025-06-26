@@ -7,7 +7,6 @@ This feature file covers the login scenarios
     And the user selects the Alerts, Frame & Windows from the menu
   	And the user selects Browser Windows from sub-menu  
 
-  @only
   Scenario: TC123789 Verify the page opens in a new tab
     When the user clicks the New Tab button
     And the user switches to the newly opened tab
