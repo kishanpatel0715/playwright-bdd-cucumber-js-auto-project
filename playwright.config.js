@@ -48,6 +48,7 @@ export default defineConfig({
   use: {
     screenshot: 'on',
     trace: 'on',
+    slowMo: 2000,
   },
 
 
@@ -57,6 +58,8 @@ export default defineConfig({
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
+
+    
 
     // {
     //   name: 'firefox',

@@ -7,7 +7,6 @@ This feature file covers the Download and Upload scenarios
     And user selects the Elements from menu
   	And user selects Upload and Download from sub-menu  
 
-  @only
   Scenario: TC912345 Verify successful file download
     When the user downloads the file
     Then the file is downloaded successfully
